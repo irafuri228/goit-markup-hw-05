@@ -77,7 +77,7 @@
          color: var(--primary-text-color);
       }
    
-      .heder {
+      .header {
          border-bottom: 1px solid var(--br-color);
          box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
       }
@@ -88,7 +88,7 @@
          padding: 0 15px;
       }
    
-      .heder-container {
+      .header-container {
          display: flex;
          align-items: center;
          gap: 40px;
@@ -615,16 +615,18 @@ svg {
 
  }
 
-/* modal-window */
+/* Modal window */
+
 .backdrop {
    position: fixed;
-   left: 0;
+   z-index: 100;
    top: 0;
+   left: 0;
    width: 100%;
    height: 100%;
    background-color: rgba(46, 47, 66, 0.4);
-
-   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: opacity 250ms cubic-bezier(0.42, 0, 0.58, 1),
+      visibility 250ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 
 .backdrop.is-hidden {
@@ -635,49 +637,42 @@ svg {
 
 .modal {
    position: absolute;
-   right: 50%;
-   bottom: 50%;
-   transform: translate(50%, 50%);
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
    width: 408px;
    height: 576px;
-   background-color: var(--modal-bg);
-
-   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   background-color: #fcfcfc;
+   border-radius: 4px;
+   overflow: auto;
 }
 
-.backdrop.is-hidden .modal {
-   transform: scale(0);
-}
-
-.modal-close {
+.modal-close-btn {
    position: absolute;
    top: 24px;
    right: 24px;
-   width: 24px;
-   height: 24px;
-   background-color: var(--br-color);
-   border: 1px solid rgba(0, 0, 0, 0.1);
-   border-radius: 50%;
-   padding: 0;
    display: flex;
    justify-content: center;
    align-items: center;
+   width: 24px;
+   height: 24px;
+   border-radius: 50%;
+   background-color: #e7e9fc;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   padding: 0;
 
-   cursor: pointer;
-
-   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   transition: background-color 250ms cubic-bezier(0.42, 0, 0.58, 1),
+      color 250ms ease;
 }
 
-.modal-close-icon {
-   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+   background-color: var(--color-brand);
 }
 
-.modal-close:hover,
-.modal-close:focus {
-   background-color: var(--filters-color);
-}
-
-.modal-close:hover .modal-close-icon,
-.modal-close:focus .modal-close-icon {
-   fill: var(--white-color);
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+   fill: var(--color-button);
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms ease;
 }
