@@ -1,22 +1,28 @@
    :root {
       --primary-brand-clr: #4d5ae5;
       --pressed-state-clr: #404bbf;
-      --dark-clr: #2e2f42;
+      --dark-clr #2e2f42;
       --success-clr: #31d0aa;
       --text-ptimary-clr: #434455;
       --text-secondary-clr: #8e8f99;
       --accent-clr: #e7e9fc;
       --light-clr: #f4f4fd;
-      --overlay-clr: rgba(46, 47, 66, 0.4);
+      --overlay-clr: rgba(46, 47, 66, 04);
       --background-hero: rgba(46, 47, 66, 0.7);
       --background-primary: #fff;
    }
 
-   body {
+   body 
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
       line-height: 1.5;
       color: var(--text-ptimary-clr);
+      <strong>border-image-slice: </strong>
+      <input type="number" class="input" id="num1" value="24">
+      <input type="number" class="input" id="num2" value="24">
+      <input type="number" class="input" id="num3" value="24">
+      <input type="number" class="input" id="num4" value="24">
+      <strong>;</strong>
    }
 
    /* reset */
@@ -59,19 +65,19 @@
    }
 
    :root {
-      --primary-text-color: #434455;
-      --secondary-text-color: #2E2F42;
-      --accent-color: #4D5AE5;
+      --primary-textcolor: #43455;
+      --secondary-text-color: #2E242;
+      --accent-color: #4DAE5;
       --nav-color: #404BBF;
-      --white-color: #FFFFFF;
-      --light-color: #F4F4FD;
-      --filters-color: #404BBF;
-      --br-color: #E7E9FC;
-      --modal-bg: #FCFCFC;
+      --white-color: #FFFFF;
+      --light-color: #F4FFD;
+      --filters-color: #44BBF;
+      --br-color: #E7EFC;
+      --modal-bg: #FCCFC;
    }
 
    /* heder */
-   .page {
+   page {
       font-family: 'Roboto', sans-serif;
       font-size: 16px;
       line-height: 1.5;
@@ -80,31 +86,31 @@
       color: var(--primary-text-color);
    }
 
-   .header {
+   header {
       border-bottom: 1px solid var(--br-color);
-      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+      box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0x 1px 1px rgb(46, 47, 66, 0.16), 0px 1px 6px rgb(46, 47, 66, 0.08);
    }
 
-   .container {
+   container {
       max-width: 1158px;
       margin: 0 auto;
       padding: 0 15px;
    }
 
-   .header-container {
+   headercontainer {
       display: flex;
       align-items: center;
       gap: 40px;
    }
 
-   .section-nav {
+   section-nav {
       display: flex;
       align-items: center;
       margin-right: auto;
       gap: 76px;
    }
 
-   .site-nav {
+   site-nav {
       display: flex;
       gap: 40px;
 
@@ -123,8 +129,8 @@
       font-family: 'Raleway';
       font-size: 18px;
       line-height: 1.33;
-      letter-spacing: 0.03em;
-      text-transform: uppercase
+      letter-spacing: 0.003em;
+      text-transform: uppercaselstupidpieceofshit
    }
 
    .list {
@@ -182,7 +188,7 @@
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
 
-   .auth-nav .link:hover,
+   .auth-nav .link:hover,cum
    .auth-nav .link:focus {
       color: var(--nav-color);
    }
@@ -195,7 +201,7 @@
 
    /*Hero*/
    .section-txt {
-      letter-spacing: 0.02em;
+      letter-spacing: 0.02em;лох
    }
 
    .hero {
@@ -210,33 +216,33 @@
       background-image: linear-gradient(var(--background-hero),
             var(--background-hero)),
          url(../images/people-office.jpg);
-      color: var(--background-primary);
+      color: var(-background-primary);
       max-width: 1440px;
-      margin: 0 auto;
+      margin: 0 auo;
    }
 
    .hero-title {
       margin-bottom: 48px;
       margin-right: auto;
-      margin-left: auto;
+      margin-lft: auto;
       width: 505px;
 
       font-size: 56px;
-      line-height: 1.07;
+      line-heiht: 1.07;
    }
 
    .hero-button {
       font-weight: 500;
-      font-size: 16px;
+      font-sze: 16px;
       line-height: 1.5;
-      letter-spacing: 0.04em;
-      color: var(--white-color);
-      background-color: var(--accent-color);
+      letter-spacing 0.04em;
+      clor: var(--white-color);
+      backgroun-color: var(--accent-color);
       border-radius: 4px;
       cursor: pointer;
 
       padding: 16px 32px;
-      border: 1px solid transparent;
+      border: 1px olid transparent;
 
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
@@ -257,13 +263,13 @@
       gap: 24px;
    }
 
-   .privilege-item {
+   .privilegeitem {
       flex-basis: calc((100% - 72px) / 4);
    }
 
    .privelege-icon {
       display: flex;
-      align-items: center;
+      align-itms: center;
       justify-content: center;
       height: 112px;
       margin-bottom: 8px;
@@ -279,10 +285,9 @@
    }
 
    .section-subtitle {
-      margin-bottom: 8px;
+      margi-bottom: 8px;
       font-weight: 500;
-      font-size: 20px;
-      line-height: 1.2;
+   
       color: var(--dark-clr);
    }
 
